@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Situação do aluno</title>
 </head>
@@ -9,8 +10,20 @@
     <h1>programa situação do aluno</h1>
     <form>
         <p>nome do aluno:
-            <input type="text" id="inName">
+            <input type="text" id="inNome"required>
         </p>
+
+        <p>1°Nota:
+            <input type="number" id="inNota1" min="0" max="10" step="0.1"required>
+        </p>
+
+        <p>2°Nota:
+            <input type="number" id="inNota2" min="0" max="10" step="0.1"required>
+        </p>
+        <input type="submit" value="Exibir Média e Situação">
     </form>
+    <h3></h3>
+    <h4></h4>
+    <script scr="Media.js"></script>
 </body>
 </html>

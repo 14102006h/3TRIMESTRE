@@ -14,18 +14,18 @@
         </p>
 
         <p>Sexo:
-            <input type="radio" id="inMasculino"required>Masculino
-            <input type="radio" id="inFeminino"required>Feminino
+            <input type="radio"   name="sexo"  id="inMasculino"required>Masculino
+            <input type="radio" name="sexo" id="inFeminino"required>Feminino
         </p>
 
         <p>Altura:
-            <input type="text" id="inAltura" required>
+            <input type="number" id="inAltura" min="0"  step="0.01" required>
         </p>
+
         <input type="submit" value="Calcular Peso Ideal">
-        <input type="submit" value="Limpar Campo">
+        <input type="reset" value="Limpar Campo">
     </form>
     <h3></h3>
-
-    <script scr="peso.js"></script>
+    <script src="peso.html"></script>
 </body>
 </html>

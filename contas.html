@@ -8,22 +8,24 @@
     <title>Contas do Mês</title>
 </head>
 <body>
-    <img src="img/contas.jpg" alt="Números" class="alta">
+    <img src="img/contas.jpg" alt="Contas a Pagar" class="alta">
     <h1>Programa Contas do Mês</h1>
     <form>
         <p>Descrição da Conta:
-            <input type="number" id="inNumero" required>
+            <input type="text" id="inDescrição" required>
         </p>
 
         <p>Valor a Pagar R$:
-            <input type="number" id="inNumero" required>
+            <input type="number" min= "0" step="0.0" id="inValor" required>
         </p>
 
 
         <input type="submit" value="Registrar Conta">
     
     </form>
-    <pre></pre>
+    <pre id="outResp1" ></pre>
+
+    <pre id="outResp2"></pre>
     <script src="contas.js"></script>
 </body>
 </html>

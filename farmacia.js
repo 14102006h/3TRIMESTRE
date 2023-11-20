@@ -27,4 +27,10 @@ frm.addEventListener("submit", (e)=>{
         valParcelas = valor/numParcelas
         resp2.innerText = `Pode pagar em: ${numParcelas} x de R$ ${valParcelas.toFixed(2)}`
     }
+
+})
+
+frm.addEventListener("reset", (e) =>{
+    resp1.innerText = " "  //limpa o conteúdo de h3
+    resp2.innerText = " "  //limpa o conteúdo de h3
 })
